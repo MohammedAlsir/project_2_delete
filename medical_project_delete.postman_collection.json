@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "366e2bcb-836b-4c8b-8462-b5c85262d28b",
+		"name": "medical_project_delete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mohammed",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "m7md@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "m7md@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "medicine",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGQ2NDlmMTJjMTBiNTllOTkzMGUzYWNhZTVhZDM5OTYyMmY4YzBlYzNiOTc2ZGI2NzhhYWYxYjE5YTNiNzIyYjM4N2E3MGZmNmNlOTgxMjYiLCJpYXQiOjE2NjYzMzkxNzAuNDI0Mzc4LCJuYmYiOjE2NjYzMzkxNzAuNDI0Mzg2LCJleHAiOjE2OTc4NzUxNzAuMjcyOTYyLCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.dS_wgBx7KxIoDqA3bsyL26U-aQxcvj5C4SWz_6ijyJ-vuw94g0dqDYqFLbmOYpQ_zNVI_-THUr93Glwk0hei60PhhmN6MeF9bFep6sr1EXWAY0I50ageRzutO0cKJtUGfr2yB043aMvCxpg0fXbYaa8Uvh7Nvn5NaT7mKWM3ZEGO4qvFao_7ddNUxeMBGz6ftsgIVHOgJyGqS-kg3BSCbBQU2jH0lgOyijI7TldkcyIgB6kDnT_YoNJYBPKRCTHTWv9Khd4OVLHk0AMnChjmqSVi6jGd21987lQKrC4G2B95NFMCN1BhKwxDjmoBjtpRNVmX-2DxHq7lB-vLXaCR4cChUk-eRUrTpgyqbWEZSFNeOiqF4UWT0VIs6HlGZmRnO_wCbf4flMpS4GWRvzZVcjwbpj1FYm57VnY5P3ifkoMQf-2sHJZS0_hb6NHHmALBYhKs_11M2K0hPlMNPhb6aF0k5tHkVhhlepuGNjEGRvwLIcZgf_c16dJOENHhO4e-VI5hEmoebPUph7bSeSVOj5pdpVT3zu2K-5VXX73KaL3Ju2po11OLMc2h0VnVSsWLjRszN5gEUit4x77Dl6GhBftzWnqybgh51ZehNRrVrQqbxeunNznvqQJMO2NS5NEaOFsLK3q-JtHCFkZiWJrw8JtXm-ofUF2I9S1i_tOOOFY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "m7md@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/medicine",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"medicine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDk2ZGM0NWVkZTFhNWIxNWFjZDEyMjNjMGIyZGUzZGFjMTQ3ZTI1YjNhY2EzNWZkNTYzYWM4NjVkOGI0YmU2NmY2NzEzMzBjZjgyZTU4NDIiLCJpYXQiOjE2NjYzNTY3OTAuOTQ3NTczLCJuYmYiOjE2NjYzNTY3OTAuOTQ3NTk1LCJleHAiOjE2OTc4OTI3OTAuNjQyMTQyLCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.kg8LRpuNTWxoDbHVgf7drRtWDcBScM94ZBdU9SB5tD9kLVgMtA9_NjpEbXRVNPrxjROrldVX3T7nxRdre0bP8dSNGYdov8URI-ckri_RvGXDZfLlpI1uElGVyI4Jue24l2g1c83QlIIO4FcFmh-Fo1lUTz9BgnvYDJvDhJdwOoOLoYd2UgfUquRIn1s4P-LMpoAAFy0Jb8rH0Lgt9nINN7hn1QC9PRntghS9AirZvkK4-NtqxvDmnuqrEagklaC0em56oIzt-Ccp88uVJ1r-RaCfVmgIXR4MeRpiXfRE7TEk5--gbD_-_y1dP0l8HRtt3rMcMRq8-7kcidWoFbCrUNfyOnx_mjWL3El-aZ0CRhLK-TBeKufPeCCSQI5_upiBER81oyA2s2oFleVHV334fPsQpEaNSguuM2LXGhXUNRJ8a_clsfPC8YDfa_DRPNYuTJ31wBsyQDct7jpWqFTDlDML4dIFlbnCl-Zi1z99EETGiY-zhUUi9zMwGU5jf0nl3XdayggPRNuPV4KZQ0sSHr2F2uoFbbDcicHi6C0NhfMYlL1tAbkaarvP5LMkoneKP6mpcgzE-YUpFk9uFONOtF7WWKNieQb9N157waPnFmqCTA32V9pGmVZc9QR7QIqmNhcFj-jGcy2ekEucbVt74sPWQw6J8Oxsmf7ZudKT1vY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "medicine_id",
+							"value": "4",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDk2ZGM0NWVkZTFhNWIxNWFjZDEyMjNjMGIyZGUzZGFjMTQ3ZTI1YjNhY2EzNWZkNTYzYWM4NjVkOGI0YmU2NmY2NzEzMzBjZjgyZTU4NDIiLCJpYXQiOjE2NjYzNTY3OTAuOTQ3NTczLCJuYmYiOjE2NjYzNTY3OTAuOTQ3NTk1LCJleHAiOjE2OTc4OTI3OTAuNjQyMTQyLCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.kg8LRpuNTWxoDbHVgf7drRtWDcBScM94ZBdU9SB5tD9kLVgMtA9_NjpEbXRVNPrxjROrldVX3T7nxRdre0bP8dSNGYdov8URI-ckri_RvGXDZfLlpI1uElGVyI4Jue24l2g1c83QlIIO4FcFmh-Fo1lUTz9BgnvYDJvDhJdwOoOLoYd2UgfUquRIn1s4P-LMpoAAFy0Jb8rH0Lgt9nINN7hn1QC9PRntghS9AirZvkK4-NtqxvDmnuqrEagklaC0em56oIzt-Ccp88uVJ1r-RaCfVmgIXR4MeRpiXfRE7TEk5--gbD_-_y1dP0l8HRtt3rMcMRq8-7kcidWoFbCrUNfyOnx_mjWL3El-aZ0CRhLK-TBeKufPeCCSQI5_upiBER81oyA2s2oFleVHV334fPsQpEaNSguuM2LXGhXUNRJ8a_clsfPC8YDfa_DRPNYuTJ31wBsyQDct7jpWqFTDlDML4dIFlbnCl-Zi1z99EETGiY-zhUUi9zMwGU5jf0nl3XdayggPRNuPV4KZQ0sSHr2F2uoFbbDcicHi6C0NhfMYlL1tAbkaarvP5LMkoneKP6mpcgzE-YUpFk9uFONOtF7WWKNieQb9N157waPnFmqCTA32V9pGmVZc9QR7QIqmNhcFj-jGcy2ekEucbVt74sPWQw6J8Oxsmf7ZudKT1vY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "medicine_id",
+							"value": "4",
+							"type": "default"
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDk2ZGM0NWVkZTFhNWIxNWFjZDEyMjNjMGIyZGUzZGFjMTQ3ZTI1YjNhY2EzNWZkNTYzYWM4NjVkOGI0YmU2NmY2NzEzMzBjZjgyZTU4NDIiLCJpYXQiOjE2NjYzNTY3OTAuOTQ3NTczLCJuYmYiOjE2NjYzNTY3OTAuOTQ3NTk1LCJleHAiOjE2OTc4OTI3OTAuNjQyMTQyLCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.kg8LRpuNTWxoDbHVgf7drRtWDcBScM94ZBdU9SB5tD9kLVgMtA9_NjpEbXRVNPrxjROrldVX3T7nxRdre0bP8dSNGYdov8URI-ckri_RvGXDZfLlpI1uElGVyI4Jue24l2g1c83QlIIO4FcFmh-Fo1lUTz9BgnvYDJvDhJdwOoOLoYd2UgfUquRIn1s4P-LMpoAAFy0Jb8rH0Lgt9nINN7hn1QC9PRntghS9AirZvkK4-NtqxvDmnuqrEagklaC0em56oIzt-Ccp88uVJ1r-RaCfVmgIXR4MeRpiXfRE7TEk5--gbD_-_y1dP0l8HRtt3rMcMRq8-7kcidWoFbCrUNfyOnx_mjWL3El-aZ0CRhLK-TBeKufPeCCSQI5_upiBER81oyA2s2oFleVHV334fPsQpEaNSguuM2LXGhXUNRJ8a_clsfPC8YDfa_DRPNYuTJ31wBsyQDct7jpWqFTDlDML4dIFlbnCl-Zi1z99EETGiY-zhUUi9zMwGU5jf0nl3XdayggPRNuPV4KZQ0sSHr2F2uoFbbDcicHi6C0NhfMYlL1tAbkaarvP5LMkoneKP6mpcgzE-YUpFk9uFONOtF7WWKNieQb9N157waPnFmqCTA32V9pGmVZc9QR7QIqmNhcFj-jGcy2ekEucbVt74sPWQw6J8Oxsmf7ZudKT1vY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "4m@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "887",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "0000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
