@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "1cbb755f-f3e1-4304-914f-db0214417cf2",
+		"name": "project_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "company -> لعرض قائمة شركات التامين في عملية التسجيل وارسال رقم الشركة company_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/company",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ali@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Mohammed",
+							"type": "default"
+						},
+						{
+							"key": "company_id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "m7md@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Mohammed",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clinic",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGQ0NDJiNjc2Y2ZkMjExNjAwNmFhMmRhMmQ2YzA2YWJjMWQyOTBiMmZlNThmZTA1MWEwZGVlMWIyMTEzMmIxOGE0OTY2MDdlNzMwZmNkYjAiLCJpYXQiOjE2NjY3MTYyMDcuODY3ODY4LCJuYmYiOjE2NjY3MTYyMDcuODY3ODc1LCJleHAiOjE2OTgyNTIyMDcuODM4OTI5LCJzdWIiOiI4Iiwic2NvcGVzIjpbXX0.FmR0milvYYX4C-qOhmW1OCbvho6DFCsBqKaQA3j0jZc2YM5dp8ynIG5qiBfU-ie0Cvi8MKZ3JYrjthadtnTMfzOskCw0k-fc8bwaIoBx4HxpteVMX6lS-zIyjiviSwRUXToKzYA1_KBBbQskf_aEDKB98L6BJ3-KZ2Ojc-XGE7Tp_Crgayk33n4vASiNnlZcR7k8QSzKmXGvd_RG8jI2djiOry7Y3W7_DzBcz22fCp8Dmcien_uW08gjVQeQm6AVjXp8IFI-kcEel694p1angFT6SWwg6qF06nQWe3nsPAw4JTvQvRmaugDnJtxSOBEp47Q26uxgg8R4B90agXMvqiCCRIQVZAO4THYmRCaggYIBiVI0WOnFWo19ZeesjNhVHdgAL3j24RGgrx0ZrlG6vKfNSgFNsTa8NArt-cZ8uYaWsraiy7ZqCE-zCH1zbaGC3sIdPvBgEKAwBcl9gU3ElINMlUxg3K3fgX4H69vm-818dLvU8v67xOTZRSxIdxvqTHe8TMG9UFTGhDAKAiNEO6CL6ipBT6Bx-jfXJ0tZqHYJBEPRY0Lzz7JtKB_oZKFmQlfbE4ItI2MiJ5mH2tdBh_mboyBKi8L2X_bKu5iuhWazdGtctCgj9OYcXwpX95eF2ahR5ET4vfUCy7toZGvOizL27kP327DrbtOz7-lAXD0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/clinic",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"clinic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doctors by clinic id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGQ0NDJiNjc2Y2ZkMjExNjAwNmFhMmRhMmQ2YzA2YWJjMWQyOTBiMmZlNThmZTA1MWEwZGVlMWIyMTEzMmIxOGE0OTY2MDdlNzMwZmNkYjAiLCJpYXQiOjE2NjY3MTYyMDcuODY3ODY4LCJuYmYiOjE2NjY3MTYyMDcuODY3ODc1LCJleHAiOjE2OTgyNTIyMDcuODM4OTI5LCJzdWIiOiI4Iiwic2NvcGVzIjpbXX0.FmR0milvYYX4C-qOhmW1OCbvho6DFCsBqKaQA3j0jZc2YM5dp8ynIG5qiBfU-ie0Cvi8MKZ3JYrjthadtnTMfzOskCw0k-fc8bwaIoBx4HxpteVMX6lS-zIyjiviSwRUXToKzYA1_KBBbQskf_aEDKB98L6BJ3-KZ2Ojc-XGE7Tp_Crgayk33n4vASiNnlZcR7k8QSzKmXGvd_RG8jI2djiOry7Y3W7_DzBcz22fCp8Dmcien_uW08gjVQeQm6AVjXp8IFI-kcEel694p1angFT6SWwg6qF06nQWe3nsPAw4JTvQvRmaugDnJtxSOBEp47Q26uxgg8R4B90agXMvqiCCRIQVZAO4THYmRCaggYIBiVI0WOnFWo19ZeesjNhVHdgAL3j24RGgrx0ZrlG6vKfNSgFNsTa8NArt-cZ8uYaWsraiy7ZqCE-zCH1zbaGC3sIdPvBgEKAwBcl9gU3ElINMlUxg3K3fgX4H69vm-818dLvU8v67xOTZRSxIdxvqTHe8TMG9UFTGhDAKAiNEO6CL6ipBT6Bx-jfXJ0tZqHYJBEPRY0Lzz7JtKB_oZKFmQlfbE4ItI2MiJ5mH2tdBh_mboyBKi8L2X_bKu5iuhWazdGtctCgj9OYcXwpX95eF2ahR5ET4vfUCy7toZGvOizL27kP327DrbtOz7-lAXD0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/clinic/1/doctors",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"clinic",
+						"1",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reservation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGQ0NDJiNjc2Y2ZkMjExNjAwNmFhMmRhMmQ2YzA2YWJjMWQyOTBiMmZlNThmZTA1MWEwZGVlMWIyMTEzMmIxOGE0OTY2MDdlNzMwZmNkYjAiLCJpYXQiOjE2NjY3MTYyMDcuODY3ODY4LCJuYmYiOjE2NjY3MTYyMDcuODY3ODc1LCJleHAiOjE2OTgyNTIyMDcuODM4OTI5LCJzdWIiOiI4Iiwic2NvcGVzIjpbXX0.FmR0milvYYX4C-qOhmW1OCbvho6DFCsBqKaQA3j0jZc2YM5dp8ynIG5qiBfU-ie0Cvi8MKZ3JYrjthadtnTMfzOskCw0k-fc8bwaIoBx4HxpteVMX6lS-zIyjiviSwRUXToKzYA1_KBBbQskf_aEDKB98L6BJ3-KZ2Ojc-XGE7Tp_Crgayk33n4vASiNnlZcR7k8QSzKmXGvd_RG8jI2djiOry7Y3W7_DzBcz22fCp8Dmcien_uW08gjVQeQm6AVjXp8IFI-kcEel694p1angFT6SWwg6qF06nQWe3nsPAw4JTvQvRmaugDnJtxSOBEp47Q26uxgg8R4B90agXMvqiCCRIQVZAO4THYmRCaggYIBiVI0WOnFWo19ZeesjNhVHdgAL3j24RGgrx0ZrlG6vKfNSgFNsTa8NArt-cZ8uYaWsraiy7ZqCE-zCH1zbaGC3sIdPvBgEKAwBcl9gU3ElINMlUxg3K3fgX4H69vm-818dLvU8v67xOTZRSxIdxvqTHe8TMG9UFTGhDAKAiNEO6CL6ipBT6Bx-jfXJ0tZqHYJBEPRY0Lzz7JtKB_oZKFmQlfbE4ItI2MiJ5mH2tdBh_mboyBKi8L2X_bKu5iuhWazdGtctCgj9OYcXwpX95eF2ahR5ET4vfUCy7toZGvOizL27kP327DrbtOz7-lAXD0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "doctor_id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/reservation",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"reservation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
